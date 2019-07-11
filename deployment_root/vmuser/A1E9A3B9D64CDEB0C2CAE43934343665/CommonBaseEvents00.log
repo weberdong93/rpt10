@@ -1,0 +1,1000 @@
+<CommonBaseEvent creationTime="2019-07-11T09:02:59.501Z" globalInstanceId="A1E9A3BAAFEA4040D66AE36434333761" msg="RPXE4216E ????????????????C:\Users\Administrator\git\rpt10\deployment_root\vmuser\A1E9A3B9D64CDEB0C2CAE43934343665\descriptors.xml?&#xA;com.ibm.rational.test.lt.execution.stats.PersistenceException: java.io.IOException: Creating remote agent failed. POST http://10.0.13.252:7080/analytics/up/sessions/gb18030/??/vu?€????????_1562835744861.stats/livedata/ responded: 400 Bad Request&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.stats.PersistenceException.adapt(PersistenceException.java:35)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.stats.session.remote.RemoteStatsReceiver.createWriter(RemoteStatsReceiver.java:67)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.runner.impl.RPTNextgenRunner$RPTRunnerInternal.getStatisticsAgentWriter(RPTNextgenRunner.java:207)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.runner.impl.RPTRunner.createNewStats(RPTRunner.java:621)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.runner.impl.RPTRunner.startStatistics(RPTRunner.java:591)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.runner.impl.RPTRunner.executeCustomCommand(RPTRunner.java:988)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.runner.impl.CommandProcessor$Processor.run(CommandProcessor.java:131)&#xD;&#xA;&#x9;at java.lang.Thread.run(Thread.java:819)&#xD;&#xA;Caused by: java.io.IOException: Creating remote agent failed. POST http://10.0.13.252:7080/analytics/up/sessions/gb18030/??/vu?€????????_1562835744861.stats/livedata/ responded: 400 Bad Request&#xD;&#xA;&#x9;at com.hcl.test.http.client.internal.ServerResponse.reportFailure(ServerResponse.java:79)&#xD;&#xA;&#x9;at com.hcl.test.http.client.internal.ServerResponse.expectStatusCode(ServerResponse.java:68)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.stats.session.remote.RemoteStatsReceiver.createWriter(RemoteStatsReceiver.java:62)&#xD;&#xA;&#x9;... 6 more&#xD;&#xA;" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>0</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:stackTrace" type="stringArray">
+		<values>com.ibm.rational.test.lt.execution.stats.PersistenceException: java.io.IOException: Creating remote agent failed. POST http://10.0.13.252:7080/analytics/up/sessions/gb18030/??/vu?€????????_1562835744861.stats/livedata/ responded: 400 Bad Request</values>
+		<values>com.ibm.rational.test.lt.execution.stats.PersistenceException.adapt(PersistenceException.java:35)</values>
+		<values>com.ibm.rational.test.lt.execution.stats.session.remote.RemoteStatsReceiver.createWriter(RemoteStatsReceiver.java:67)</values>
+		<values>com.ibm.rational.test.lt.kernel.runner.impl.RPTNextgenRunner$RPTRunnerInternal.getStatisticsAgentWriter(RPTNextgenRunner.java:207)</values>
+		<values>com.ibm.rational.test.lt.kernel.runner.impl.RPTRunner.createNewStats(RPTRunner.java:621)</values>
+		<values>com.ibm.rational.test.lt.kernel.runner.impl.RPTRunner.startStatistics(RPTRunner.java:591)</values>
+		<values>com.ibm.rational.test.lt.kernel.runner.impl.RPTRunner.executeCustomCommand(RPTRunner.java:988)</values>
+		<values>com.ibm.rational.test.lt.kernel.runner.impl.CommandProcessor$Processor.run(CommandProcessor.java:131)</values>
+		<values>java.lang.Thread.run(Thread.java:819)</values>
+		<children name="Cause" type="stringArray">
+			<values>java.io.IOException: Creating remote agent failed. POST http://10.0.13.252:7080/analytics/up/sessions/gb18030/??/vu?€????????_1562835744861.stats/livedata/ responded: 400 Bad Request</values>
+			<values>com.hcl.test.http.client.internal.ServerResponse.reportFailure(ServerResponse.java:79)</values>
+			<values>com.hcl.test.http.client.internal.ServerResponse.expectStatusCode(ServerResponse.java:68)</values>
+			<values>com.ibm.rational.test.lt.execution.stats.session.remote.RemoteStatsReceiver.createWriter(RemoteStatsReceiver.java:62)</values>
+			<values>com.ibm.rational.test.lt.kernel.runner.impl.RPTNextgenRunner$RPTRunnerInternal.getStatisticsAgentWriter(RPTNextgenRunner.java:207)</values>
+			<values>com.ibm.rational.test.lt.kernel.runner.impl.RPTRunner.createNewStats(RPTRunner.java:621)</values>
+			<values>com.ibm.rational.test.lt.kernel.runner.impl.RPTRunner.startStatistics(RPTRunner.java:591)</values>
+			<values>com.ibm.rational.test.lt.kernel.runner.impl.RPTRunner.executeCustomCommand(RPTRunner.java:988)</values>
+			<values>com.ibm.rational.test.lt.kernel.runner.impl.CommandProcessor$Processor.run(CommandProcessor.java:131)</values>
+			<values>java.lang.Thread.run(Thread.java:819)</values>
+		</children>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:00.882Z" globalInstanceId="A1E9A3BAAFF27DA0D66AE36434333761" msg="RPXE0001W 5 users successfully added" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>1</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:15.919Z" globalInstanceId="A1E9A3BAB8161410D66AE36434333761" msg="RPTC0001I Invalid Message Catalog ID &quot;&quot; using resource from &quot;com.ibm.rational.test.lt.kernel.logging.impl.KernelSubComponent&quot;&#xA;java.lang.ClassCastException: com.ibm.rational.test.lt.kernel.statistics.impl.NoOpStatistics incompatible with com.ibm.rational.test.lt.kernel.statistics.impl.Scalar&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:334)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:1)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.reportHealthyStats(HealthyContainer.java:69)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.preFinish(HealthyContainer.java:80)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPPage.preFinish(HTTPPage.java:815)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:394)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPPage.finish(HTTPPage.java:798)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.Parallel.doFinally(Parallel.java:145)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.Parallel.finish(Parallel.java:228)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.kernelFinish(HTTPAction.java:6253)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.finish_Normal(HTTPAction.java:5436)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.doComplete(HTTPAction.java:3935)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.private_handleRead(HTTPAction.java:3425)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead_http(HTTPAction.java:3077)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead(HTTPAction.java:1003)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.io.impl.KChannel.finishRead(KChannel.java:517)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.io.impl.KChannel.executeAction(KChannel.java:256)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.run(KAction.java:1986)&#xD;&#xA;&#x9;at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)&#xD;&#xA;&#x9;at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)&#xD;&#xA;&#x9;at java.lang.Thread.run(Thread.java:819)&#xD;&#xA;" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>2</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:stackTrace" type="stringArray">
+		<values>java.lang.ClassCastException: com.ibm.rational.test.lt.kernel.statistics.impl.NoOpStatistics incompatible with com.ibm.rational.test.lt.kernel.statistics.impl.Scalar</values>
+		<values>com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:334)</values>
+		<values>com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:1)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.reportHealthyStats(HealthyContainer.java:69)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.preFinish(HealthyContainer.java:80)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPPage.preFinish(HTTPPage.java:815)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:394)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPPage.finish(HTTPPage.java:798)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.Parallel.doFinally(Parallel.java:145)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.Parallel.finish(Parallel.java:228)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.kernelFinish(HTTPAction.java:6253)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.finish_Normal(HTTPAction.java:5436)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.doComplete(HTTPAction.java:3935)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.private_handleRead(HTTPAction.java:3425)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead_http(HTTPAction.java:3077)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead(HTTPAction.java:1003)</values>
+		<values>com.ibm.rational.test.lt.kernel.io.impl.KChannel.finishRead(KChannel.java:517)</values>
+		<values>com.ibm.rational.test.lt.kernel.io.impl.KChannel.executeAction(KChannel.java:256)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.run(KAction.java:1986)</values>
+		<values>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</values>
+		<values>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</values>
+		<values>java.lang.Thread.run(Thread.java:819)</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:15.931Z" globalInstanceId="A1E9A3BAB817E8D0D66AE36434333761" msg="RPTC0001I Invalid Message Catalog ID &quot;&quot; using resource from &quot;com.ibm.rational.test.lt.kernel.logging.impl.KernelSubComponent&quot;&#xA;java.lang.ClassCastException: com.ibm.rational.test.lt.kernel.statistics.impl.NoOpStatistics incompatible with com.ibm.rational.test.lt.kernel.statistics.impl.Scalar&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:334)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:1)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.reportHealthyStats(HealthyContainer.java:69)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.preFinish(HealthyContainer.java:80)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPPage.preFinish(HTTPPage.java:815)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:394)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPPage.finish(HTTPPage.java:798)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.Parallel.doFinally(Parallel.java:145)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.Parallel.finish(Parallel.java:228)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.kernelFinish(HTTPAction.java:6253)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.finish_Normal(HTTPAction.java:5436)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.doComplete(HTTPAction.java:3935)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.private_handleRead(HTTPAction.java:3425)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead_http(HTTPAction.java:3077)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead(HTTPAction.java:1003)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.io.impl.KChannel.finishRead(KChannel.java:517)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.io.impl.KChannel.executeAction(KChannel.java:256)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.run(KAction.java:1986)&#xD;&#xA;&#x9;at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)&#xD;&#xA;&#x9;at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)&#xD;&#xA;&#x9;at java.lang.Thread.run(Thread.java:819)&#xD;&#xA;" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>3</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:stackTrace" type="stringArray">
+		<values>java.lang.ClassCastException: com.ibm.rational.test.lt.kernel.statistics.impl.NoOpStatistics incompatible with com.ibm.rational.test.lt.kernel.statistics.impl.Scalar</values>
+		<values>com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:334)</values>
+		<values>com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:1)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.reportHealthyStats(HealthyContainer.java:69)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.preFinish(HealthyContainer.java:80)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPPage.preFinish(HTTPPage.java:815)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:394)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPPage.finish(HTTPPage.java:798)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.Parallel.doFinally(Parallel.java:145)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.Parallel.finish(Parallel.java:228)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.kernelFinish(HTTPAction.java:6253)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.finish_Normal(HTTPAction.java:5436)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.doComplete(HTTPAction.java:3935)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.private_handleRead(HTTPAction.java:3425)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead_http(HTTPAction.java:3077)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead(HTTPAction.java:1003)</values>
+		<values>com.ibm.rational.test.lt.kernel.io.impl.KChannel.finishRead(KChannel.java:517)</values>
+		<values>com.ibm.rational.test.lt.kernel.io.impl.KChannel.executeAction(KChannel.java:256)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.run(KAction.java:1986)</values>
+		<values>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</values>
+		<values>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</values>
+		<values>java.lang.Thread.run(Thread.java:819)</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:16.034Z" globalInstanceId="A1E9A3BAB8277930D66AE36434333761" msg="RPTC0001I Invalid Message Catalog ID &quot;&quot; using resource from &quot;com.ibm.rational.test.lt.kernel.logging.impl.KernelSubComponent&quot;&#xA;java.lang.ClassCastException: com.ibm.rational.test.lt.kernel.statistics.impl.NoOpStatistics incompatible with com.ibm.rational.test.lt.kernel.statistics.impl.Scalar&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:334)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:1)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.reportHealthyStats(HealthyContainer.java:69)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.preFinish(HealthyContainer.java:80)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPPage.preFinish(HTTPPage.java:815)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:394)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPPage.finish(HTTPPage.java:798)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.Parallel.doFinally(Parallel.java:145)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.Parallel.finish(Parallel.java:228)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.kernelFinish(HTTPAction.java:6253)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.finish_Normal(HTTPAction.java:5436)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.doComplete(HTTPAction.java:3935)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.private_handleRead(HTTPAction.java:3425)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead_http(HTTPAction.java:3077)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead(HTTPAction.java:1003)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.io.impl.KChannel.finishRead(KChannel.java:517)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.io.impl.KChannel.executeAction(KChannel.java:256)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.run(KAction.java:1986)&#xD;&#xA;&#x9;at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)&#xD;&#xA;&#x9;at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)&#xD;&#xA;&#x9;at java.lang.Thread.run(Thread.java:819)&#xD;&#xA;" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>4</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:stackTrace" type="stringArray">
+		<values>java.lang.ClassCastException: com.ibm.rational.test.lt.kernel.statistics.impl.NoOpStatistics incompatible with com.ibm.rational.test.lt.kernel.statistics.impl.Scalar</values>
+		<values>com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:334)</values>
+		<values>com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:1)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.reportHealthyStats(HealthyContainer.java:69)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.preFinish(HealthyContainer.java:80)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPPage.preFinish(HTTPPage.java:815)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:394)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPPage.finish(HTTPPage.java:798)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.Parallel.doFinally(Parallel.java:145)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.Parallel.finish(Parallel.java:228)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.kernelFinish(HTTPAction.java:6253)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.finish_Normal(HTTPAction.java:5436)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.doComplete(HTTPAction.java:3935)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.private_handleRead(HTTPAction.java:3425)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead_http(HTTPAction.java:3077)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead(HTTPAction.java:1003)</values>
+		<values>com.ibm.rational.test.lt.kernel.io.impl.KChannel.finishRead(KChannel.java:517)</values>
+		<values>com.ibm.rational.test.lt.kernel.io.impl.KChannel.executeAction(KChannel.java:256)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.run(KAction.java:1986)</values>
+		<values>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</values>
+		<values>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</values>
+		<values>java.lang.Thread.run(Thread.java:819)</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:16.094Z" globalInstanceId="A1E9A3BAB8320080D66AE36434333761" msg="RPTC0001I Invalid Message Catalog ID &quot;&quot; using resource from &quot;com.ibm.rational.test.lt.kernel.logging.impl.KernelSubComponent&quot;&#xA;java.lang.ClassCastException: com.ibm.rational.test.lt.kernel.statistics.impl.NoOpStatistics incompatible with com.ibm.rational.test.lt.kernel.statistics.impl.Scalar&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:334)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:1)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.reportHealthyStats(HealthyContainer.java:69)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.preFinish(HealthyContainer.java:80)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPPage.preFinish(HTTPPage.java:815)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:394)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPPage.finish(HTTPPage.java:798)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.Parallel.doFinally(Parallel.java:145)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.Parallel.finish(Parallel.java:228)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.kernelFinish(HTTPAction.java:6253)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.finish_Normal(HTTPAction.java:5436)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.doComplete(HTTPAction.java:3935)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.private_handleRead(HTTPAction.java:3425)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead_http(HTTPAction.java:3077)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead(HTTPAction.java:1003)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.io.impl.KChannel.finishRead(KChannel.java:517)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.io.impl.KChannel.executeAction(KChannel.java:256)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.run(KAction.java:1986)&#xD;&#xA;&#x9;at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)&#xD;&#xA;&#x9;at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)&#xD;&#xA;&#x9;at java.lang.Thread.run(Thread.java:819)&#xD;&#xA;" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>5</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:stackTrace" type="stringArray">
+		<values>java.lang.ClassCastException: com.ibm.rational.test.lt.kernel.statistics.impl.NoOpStatistics incompatible with com.ibm.rational.test.lt.kernel.statistics.impl.Scalar</values>
+		<values>com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:334)</values>
+		<values>com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:1)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.reportHealthyStats(HealthyContainer.java:69)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.preFinish(HealthyContainer.java:80)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPPage.preFinish(HTTPPage.java:815)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:394)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPPage.finish(HTTPPage.java:798)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.Parallel.doFinally(Parallel.java:145)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.Parallel.finish(Parallel.java:228)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.kernelFinish(HTTPAction.java:6253)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.finish_Normal(HTTPAction.java:5436)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.doComplete(HTTPAction.java:3935)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.private_handleRead(HTTPAction.java:3425)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead_http(HTTPAction.java:3077)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead(HTTPAction.java:1003)</values>
+		<values>com.ibm.rational.test.lt.kernel.io.impl.KChannel.finishRead(KChannel.java:517)</values>
+		<values>com.ibm.rational.test.lt.kernel.io.impl.KChannel.executeAction(KChannel.java:256)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.run(KAction.java:1986)</values>
+		<values>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</values>
+		<values>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</values>
+		<values>java.lang.Thread.run(Thread.java:819)</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:16.098Z" globalInstanceId="A1E9A3BAB8329CC0D66AE36434333761" msg="RPTC0001I Invalid Message Catalog ID &quot;&quot; using resource from &quot;com.ibm.rational.test.lt.kernel.logging.impl.KernelSubComponent&quot;&#xA;java.lang.ClassCastException: com.ibm.rational.test.lt.kernel.statistics.impl.NoOpStatistics incompatible with com.ibm.rational.test.lt.kernel.statistics.impl.Scalar&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:334)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:1)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.reportHealthyStats(HealthyContainer.java:69)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.preFinish(HealthyContainer.java:80)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPPage.preFinish(HTTPPage.java:815)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:394)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPPage.finish(HTTPPage.java:798)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.Parallel.doFinally(Parallel.java:145)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.Parallel.finish(Parallel.java:228)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.kernelFinish(HTTPAction.java:6253)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.finish_Normal(HTTPAction.java:5436)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.doComplete(HTTPAction.java:3935)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.private_handleRead(HTTPAction.java:3425)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead_http(HTTPAction.java:3077)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead(HTTPAction.java:1003)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.io.impl.KChannel.finishRead(KChannel.java:517)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.io.impl.KChannel.executeAction(KChannel.java:256)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.run(KAction.java:1986)&#xD;&#xA;&#x9;at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)&#xD;&#xA;&#x9;at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)&#xD;&#xA;&#x9;at java.lang.Thread.run(Thread.java:819)&#xD;&#xA;" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>6</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:stackTrace" type="stringArray">
+		<values>java.lang.ClassCastException: com.ibm.rational.test.lt.kernel.statistics.impl.NoOpStatistics incompatible with com.ibm.rational.test.lt.kernel.statistics.impl.Scalar</values>
+		<values>com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:334)</values>
+		<values>com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:1)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.reportHealthyStats(HealthyContainer.java:69)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.preFinish(HealthyContainer.java:80)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPPage.preFinish(HTTPPage.java:815)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:394)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPPage.finish(HTTPPage.java:798)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.Parallel.doFinally(Parallel.java:145)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.Parallel.finish(Parallel.java:228)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.kernelFinish(HTTPAction.java:6253)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.finish_Normal(HTTPAction.java:5436)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.doComplete(HTTPAction.java:3935)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.private_handleRead(HTTPAction.java:3425)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead_http(HTTPAction.java:3077)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead(HTTPAction.java:1003)</values>
+		<values>com.ibm.rational.test.lt.kernel.io.impl.KChannel.finishRead(KChannel.java:517)</values>
+		<values>com.ibm.rational.test.lt.kernel.io.impl.KChannel.executeAction(KChannel.java:256)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.run(KAction.java:1986)</values>
+		<values>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</values>
+		<values>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</values>
+		<values>java.lang.Thread.run(Thread.java:819)</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:27.105Z" globalInstanceId="A1E9A3BABEC2E900D66AE36434333761" msg="RPTC0001I Invalid Message Catalog ID &quot;&quot; using resource from &quot;com.ibm.rational.test.lt.kernel.logging.impl.KernelSubComponent&quot;&#xA;java.lang.ClassCastException: com.ibm.rational.test.lt.kernel.statistics.impl.NoOpStatistics incompatible with com.ibm.rational.test.lt.kernel.statistics.impl.Scalar&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:334)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:1)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.reportHealthyStats(HealthyContainer.java:69)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.preFinish(HealthyContainer.java:80)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPPage.preFinish(HTTPPage.java:815)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:394)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPPage.finish(HTTPPage.java:798)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.Parallel.doFinally(Parallel.java:145)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.Parallel.finish(Parallel.java:228)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.kernelFinish(HTTPAction.java:6253)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.finish_Normal(HTTPAction.java:5436)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.doComplete(HTTPAction.java:3935)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.private_handleRead(HTTPAction.java:3425)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead_http(HTTPAction.java:3077)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead(HTTPAction.java:1003)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.io.impl.KChannel.finishRead(KChannel.java:517)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.io.impl.KChannel.executeAction(KChannel.java:256)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.run(KAction.java:1986)&#xD;&#xA;&#x9;at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)&#xD;&#xA;&#x9;at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)&#xD;&#xA;&#x9;at java.lang.Thread.run(Thread.java:819)&#xD;&#xA;" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>7</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:stackTrace" type="stringArray">
+		<values>java.lang.ClassCastException: com.ibm.rational.test.lt.kernel.statistics.impl.NoOpStatistics incompatible with com.ibm.rational.test.lt.kernel.statistics.impl.Scalar</values>
+		<values>com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:334)</values>
+		<values>com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:1)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.reportHealthyStats(HealthyContainer.java:69)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.preFinish(HealthyContainer.java:80)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPPage.preFinish(HTTPPage.java:815)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:394)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPPage.finish(HTTPPage.java:798)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.Parallel.doFinally(Parallel.java:145)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.Parallel.finish(Parallel.java:228)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.kernelFinish(HTTPAction.java:6253)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.finish_Normal(HTTPAction.java:5436)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.doComplete(HTTPAction.java:3935)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.private_handleRead(HTTPAction.java:3425)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead_http(HTTPAction.java:3077)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead(HTTPAction.java:1003)</values>
+		<values>com.ibm.rational.test.lt.kernel.io.impl.KChannel.finishRead(KChannel.java:517)</values>
+		<values>com.ibm.rational.test.lt.kernel.io.impl.KChannel.executeAction(KChannel.java:256)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.run(KAction.java:1986)</values>
+		<values>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</values>
+		<values>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</values>
+		<values>java.lang.Thread.run(Thread.java:819)</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:27.294Z" globalInstanceId="A1E9A3BABEDFE6E0D66AE36434333761" msg="RPTC0001I Invalid Message Catalog ID &quot;&quot; using resource from &quot;com.ibm.rational.test.lt.kernel.logging.impl.KernelSubComponent&quot;&#xA;java.lang.ClassCastException: com.ibm.rational.test.lt.kernel.statistics.impl.NoOpStatistics incompatible with com.ibm.rational.test.lt.kernel.statistics.impl.Scalar&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:334)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:1)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.reportHealthyStats(HealthyContainer.java:69)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.preFinish(HealthyContainer.java:80)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPPage.preFinish(HTTPPage.java:815)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:394)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPPage.finish(HTTPPage.java:798)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.Parallel.doFinally(Parallel.java:145)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.Parallel.finish(Parallel.java:228)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.kernelFinish(HTTPAction.java:6253)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.finish_Normal(HTTPAction.java:5436)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.doComplete(HTTPAction.java:3935)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.private_handleRead(HTTPAction.java:3425)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead_http(HTTPAction.java:3077)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead(HTTPAction.java:1003)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.io.impl.KChannel.finishRead(KChannel.java:517)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.io.impl.KChannel.executeAction(KChannel.java:256)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.run(KAction.java:1986)&#xD;&#xA;&#x9;at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)&#xD;&#xA;&#x9;at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)&#xD;&#xA;&#x9;at java.lang.Thread.run(Thread.java:819)&#xD;&#xA;" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>8</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:stackTrace" type="stringArray">
+		<values>java.lang.ClassCastException: com.ibm.rational.test.lt.kernel.statistics.impl.NoOpStatistics incompatible with com.ibm.rational.test.lt.kernel.statistics.impl.Scalar</values>
+		<values>com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:334)</values>
+		<values>com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:1)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.reportHealthyStats(HealthyContainer.java:69)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.preFinish(HealthyContainer.java:80)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPPage.preFinish(HTTPPage.java:815)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:394)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPPage.finish(HTTPPage.java:798)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.Parallel.doFinally(Parallel.java:145)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.Parallel.finish(Parallel.java:228)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.kernelFinish(HTTPAction.java:6253)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.finish_Normal(HTTPAction.java:5436)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.doComplete(HTTPAction.java:3935)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.private_handleRead(HTTPAction.java:3425)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead_http(HTTPAction.java:3077)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead(HTTPAction.java:1003)</values>
+		<values>com.ibm.rational.test.lt.kernel.io.impl.KChannel.finishRead(KChannel.java:517)</values>
+		<values>com.ibm.rational.test.lt.kernel.io.impl.KChannel.executeAction(KChannel.java:256)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.run(KAction.java:1986)</values>
+		<values>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</values>
+		<values>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</values>
+		<values>java.lang.Thread.run(Thread.java:819)</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:27.299Z" globalInstanceId="A1E9A3BABEE2CD10D66AE36434333761" msg="RPTC0001I Invalid Message Catalog ID &quot;&quot; using resource from &quot;com.ibm.rational.test.lt.kernel.logging.impl.KernelSubComponent&quot;&#xA;java.lang.ClassCastException: com.ibm.rational.test.lt.kernel.statistics.impl.NoOpStatistics incompatible with com.ibm.rational.test.lt.kernel.statistics.impl.Scalar&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:334)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:1)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.reportHealthyStats(HealthyContainer.java:69)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.preFinish(HealthyContainer.java:80)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPPage.preFinish(HTTPPage.java:815)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:394)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPPage.finish(HTTPPage.java:798)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.Parallel.doFinally(Parallel.java:145)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.Parallel.finish(Parallel.java:228)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.kernelFinish(HTTPAction.java:6253)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.finish_Normal(HTTPAction.java:5436)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.doComplete(HTTPAction.java:3935)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.private_handleRead(HTTPAction.java:3425)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead_http(HTTPAction.java:3077)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead(HTTPAction.java:1003)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.io.impl.KChannel.finishRead(KChannel.java:517)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.io.impl.KChannel.executeAction(KChannel.java:256)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.run(KAction.java:1986)&#xD;&#xA;&#x9;at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)&#xD;&#xA;&#x9;at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)&#xD;&#xA;&#x9;at java.lang.Thread.run(Thread.java:819)&#xD;&#xA;" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>9</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:stackTrace" type="stringArray">
+		<values>java.lang.ClassCastException: com.ibm.rational.test.lt.kernel.statistics.impl.NoOpStatistics incompatible with com.ibm.rational.test.lt.kernel.statistics.impl.Scalar</values>
+		<values>com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:334)</values>
+		<values>com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:1)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.reportHealthyStats(HealthyContainer.java:69)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.preFinish(HealthyContainer.java:80)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPPage.preFinish(HTTPPage.java:815)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:394)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPPage.finish(HTTPPage.java:798)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.Parallel.doFinally(Parallel.java:145)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.Parallel.finish(Parallel.java:228)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.kernelFinish(HTTPAction.java:6253)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.finish_Normal(HTTPAction.java:5436)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.doComplete(HTTPAction.java:3935)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.private_handleRead(HTTPAction.java:3425)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead_http(HTTPAction.java:3077)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead(HTTPAction.java:1003)</values>
+		<values>com.ibm.rational.test.lt.kernel.io.impl.KChannel.finishRead(KChannel.java:517)</values>
+		<values>com.ibm.rational.test.lt.kernel.io.impl.KChannel.executeAction(KChannel.java:256)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.run(KAction.java:1986)</values>
+		<values>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</values>
+		<values>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</values>
+		<values>java.lang.Thread.run(Thread.java:819)</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:27.310Z" globalInstanceId="A1E9A3BABEE56520D66AE36434333761" msg="RPTC0001I Invalid Message Catalog ID &quot;&quot; using resource from &quot;com.ibm.rational.test.lt.kernel.logging.impl.KernelSubComponent&quot;&#xA;java.lang.ClassCastException: com.ibm.rational.test.lt.kernel.statistics.impl.NoOpStatistics incompatible with com.ibm.rational.test.lt.kernel.statistics.impl.Scalar&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:334)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:1)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.reportHealthyStats(HealthyContainer.java:69)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.preFinish(HealthyContainer.java:80)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPPage.preFinish(HTTPPage.java:815)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:394)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPPage.finish(HTTPPage.java:798)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.Parallel.doFinally(Parallel.java:145)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.Parallel.finish(Parallel.java:228)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.kernelFinish(HTTPAction.java:6253)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.finish_Normal(HTTPAction.java:5436)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.doComplete(HTTPAction.java:3935)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.private_handleRead(HTTPAction.java:3425)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead_http(HTTPAction.java:3077)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead(HTTPAction.java:1003)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.io.impl.KChannel.finishRead(KChannel.java:517)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.io.impl.KChannel.executeAction(KChannel.java:256)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.run(KAction.java:1986)&#xD;&#xA;&#x9;at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)&#xD;&#xA;&#x9;at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)&#xD;&#xA;&#x9;at java.lang.Thread.run(Thread.java:819)&#xD;&#xA;" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>10</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:stackTrace" type="stringArray">
+		<values>java.lang.ClassCastException: com.ibm.rational.test.lt.kernel.statistics.impl.NoOpStatistics incompatible with com.ibm.rational.test.lt.kernel.statistics.impl.Scalar</values>
+		<values>com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:334)</values>
+		<values>com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:1)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.reportHealthyStats(HealthyContainer.java:69)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.preFinish(HealthyContainer.java:80)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPPage.preFinish(HTTPPage.java:815)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:394)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPPage.finish(HTTPPage.java:798)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.Parallel.doFinally(Parallel.java:145)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.Parallel.finish(Parallel.java:228)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.kernelFinish(HTTPAction.java:6253)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.finish_Normal(HTTPAction.java:5436)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.doComplete(HTTPAction.java:3935)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.private_handleRead(HTTPAction.java:3425)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead_http(HTTPAction.java:3077)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead(HTTPAction.java:1003)</values>
+		<values>com.ibm.rational.test.lt.kernel.io.impl.KChannel.finishRead(KChannel.java:517)</values>
+		<values>com.ibm.rational.test.lt.kernel.io.impl.KChannel.executeAction(KChannel.java:256)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.run(KAction.java:1986)</values>
+		<values>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</values>
+		<values>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</values>
+		<values>java.lang.Thread.run(Thread.java:819)</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:27.305Z" globalInstanceId="A1E9A3BABEE60160D66AE36434333761" msg="RPTC0001I Invalid Message Catalog ID &quot;&quot; using resource from &quot;com.ibm.rational.test.lt.kernel.logging.impl.KernelSubComponent&quot;&#xA;java.lang.ClassCastException: com.ibm.rational.test.lt.kernel.statistics.impl.NoOpStatistics incompatible with com.ibm.rational.test.lt.kernel.statistics.impl.Scalar&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:334)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:1)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.reportHealthyStats(HealthyContainer.java:69)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.preFinish(HealthyContainer.java:80)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPPage.preFinish(HTTPPage.java:815)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:394)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPPage.finish(HTTPPage.java:798)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.Parallel.doFinally(Parallel.java:145)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.Parallel.finish(Parallel.java:228)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.kernelFinish(HTTPAction.java:6253)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.finish_Normal(HTTPAction.java:5436)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.doComplete(HTTPAction.java:3935)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.private_handleRead(HTTPAction.java:3425)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead_http(HTTPAction.java:3077)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead(HTTPAction.java:1003)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.io.impl.KChannel.finishRead(KChannel.java:517)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.io.impl.KChannel.executeAction(KChannel.java:256)&#xD;&#xA;&#x9;at com.ibm.rational.test.lt.kernel.action.impl.KAction.run(KAction.java:1986)&#xD;&#xA;&#x9;at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)&#xD;&#xA;&#x9;at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)&#xD;&#xA;&#x9;at java.lang.Thread.run(Thread.java:819)&#xD;&#xA;" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>11</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:stackTrace" type="stringArray">
+		<values>java.lang.ClassCastException: com.ibm.rational.test.lt.kernel.statistics.impl.NoOpStatistics incompatible with com.ibm.rational.test.lt.kernel.statistics.impl.Scalar</values>
+		<values>com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:334)</values>
+		<values>com.ibm.rational.test.lt.kernel.statistics.impl.StatTree.getScalar(StatTree.java:1)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.reportHealthyStats(HealthyContainer.java:69)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.HealthyContainer.preFinish(HealthyContainer.java:80)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPPage.preFinish(HTTPPage.java:815)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:394)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPPage.finish(HTTPPage.java:798)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.Parallel.doFinally(Parallel.java:145)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.Parallel.finish(Parallel.java:228)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.doFinally(KContainer.java:1156)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KContainer.finish(KContainer.java:1198)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.finish(KAction.java:444)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.kernelFinish(HTTPAction.java:6253)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.finish_Normal(HTTPAction.java:5436)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.doComplete(HTTPAction.java:3935)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.private_handleRead(HTTPAction.java:3425)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead_http(HTTPAction.java:3077)</values>
+		<values>com.ibm.rational.test.lt.execution.http.impl.HTTPAction.handleRead(HTTPAction.java:1003)</values>
+		<values>com.ibm.rational.test.lt.kernel.io.impl.KChannel.finishRead(KChannel.java:517)</values>
+		<values>com.ibm.rational.test.lt.kernel.io.impl.KChannel.executeAction(KChannel.java:256)</values>
+		<values>com.ibm.rational.test.lt.kernel.action.impl.KAction.run(KAction.java:1986)</values>
+		<values>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)</values>
+		<values>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)</values>
+		<values>java.lang.Thread.run(Thread.java:819)</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:41.246Z" globalInstanceId="A1E9A3BAC72E84F0D66AE36434333761" msg="RPXE0001W *** stop(30000) commencing   Container:  Engine   &lt;Stopper&gt;" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>12</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:41.258Z" globalInstanceId="A1E9A3BAC73059B0D66AE36434333761" msg="RPXE0001W 7.7.300 Engine STOP reason All Agents Inactive" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>13</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:41.258Z" globalInstanceId="A1E9A3BAC730F5F0D66AE36434333761" msg="RPXE0001W Problem Determination Log Statistics" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>14</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:41.259Z" globalInstanceId="A1E9A3BAC7316B20D66AE36434333761" msg="RPXE0001W PDLog rejected=0" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>15</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:41.267Z" globalInstanceId="A1E9A3BAC7319230D66AE36434333761" msg="RPXE0001W *** stop(30000) completed   &lt;Stopper&gt;" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>16</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:41.268Z" globalInstanceId="A1E9A3BAC731B940D66AE36434333761" msg="RPXE0001W BREW actions completed = 2048" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>17</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:41.268Z" globalInstanceId="A1E9A3BAC731E050D66AE36434333761" msg="RPXE0001W BREW largest pool size = 10" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>18</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:41.268Z" globalInstanceId="A1E9A3BAC7320760D66AE36434333761" msg="RPXE0001W Engine STOP commencing worker finalizers" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>19</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:41.370Z" globalInstanceId="A1E9A3BAC74170B0D66AE36434333761" msg="RPXE0001W Engine STOP wait for finalizers done  completed=10 poolsize=10" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>20</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:41.947Z" globalInstanceId="A1E9A3BAC799A2D0D66AE36434333761" msg="RPXE0001W Virtual User Stop Statistics" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>21</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:41.947Z" globalInstanceId="A1E9A3BAC799C9E0D66AE36434333761" msg="RPXE0001W Stop reason Unknown:  5 users" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>22</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:41.950Z" globalInstanceId="A1E9A3BAC799F0F0D66AE36434333761" msg="RPXE0001W    [??? 1][000002] stopped at 28400" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>23</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:41.950Z" globalInstanceId="A1E9A3BAC79A1800D66AE36434333761" msg="RPXE0001W    [??? 1][000001] stopped at 28397" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>24</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:41.950Z" globalInstanceId="A1E9A3BAC79A3F10D66AE36434333761" msg="RPXE0001W    [??? 1][000004] stopped at 28422" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:41.950Z" globalInstanceId="A1E9A3BAC79A6620D66AE36434333761" msg="RPXE0001W    [??? 1][000003] stopped at 28197" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>26</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:41.950Z" globalInstanceId="A1E9A3BAC79A8D30D66AE36434333761" msg="RPXE0001W    [??? 1][000005] stopped at 28382" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>27</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
+<CommonBaseEvent creationTime="2019-07-11T09:03:50.115Z" globalInstanceId="A1E9A3BACC78BCA0D66AE36434333761" msg="RPXE0001W *** Runner process finished normally ***   &lt;main&gt;" severity="50" version="1.0.1">
+	<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+		<children name="CommonBaseEventLogRecord:name" type="string">
+			<values>SEVERE</values>
+		</children>
+		<children name="CommonBaseEventLogRecord:value" type="int">
+			<values>1000</values>
+		</children>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+		<values>28</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+		<values>25</values>
+	</extendedDataElements>
+	<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+		<values>com.ibm.rational.test.lt.core.logging.PDExecutionLog</values>
+	</extendedDataElements>
+	<sourceComponentId application="IBM Rational Performance Tester" component="Performance Test Type" componentIdType="Application" executionEnvironment="Java" location="10.0.13.252" locationType="IPV4" subComponent="com.ibm.rational.test.lt.kernel_6.1.0" componentType="Hyades Data Collection Engine Application"/>
+	<situation categoryName="ReportSituation">
+		<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+	</situation>
+</CommonBaseEvent>
